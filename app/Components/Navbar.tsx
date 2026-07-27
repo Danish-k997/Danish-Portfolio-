@@ -61,6 +61,16 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+          {/* Added "See My Cv" button to mobile menu - was completely hidden on mobile due to hidden md:inline-block class */}
+          <li>
+            <Link
+              href="/mycv"
+              onClick={() => setIsOpen(false)}
+              className="inline-block bg-teal-400 text-black font-semibold px-5 py-2 rounded-full hover:bg-teal-300 transition-colors text-center"
+            >
+              See My Cv
+            </Link>
+          </li>
         </ul>
       )}
     </nav>
